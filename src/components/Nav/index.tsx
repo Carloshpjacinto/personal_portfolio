@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-end text-[2rem] font-medium text-black">
+    <nav className="w-full flex justify-end text-[2rem] font-medium bg-green-kpp text-white pt-[2.5rem] pr-[10rem] pb-[2rem]">
       <a className="ml-20" href="/projects">
         Projetos
       </a>
