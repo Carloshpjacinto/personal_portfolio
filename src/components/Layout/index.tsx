@@ -14,9 +14,9 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={heebo.className}>
+    <div className={`ml-[20rem] mr-[10rem] mt-[2.5rem] ${heebo.className}`}>
       <Navbar />
-      <main className="w-full flex justify-center align-middle">
+      <main className="">
         {children}
       </main>
       <Footer />
