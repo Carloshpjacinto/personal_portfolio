@@ -1,13 +1,13 @@
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-end mt-10 text-[2rem] pr-[10rem] font-medium text-black">
-      <a className="me-20" href="">
+    <nav className="w-full flex justify-end text-[2rem] font-medium text-black">
+      <a className="ml-20" href="/projects">
         Projetos
       </a>
-      <a className="me-20" href="">
-        Blog
+      <a className="ml-20" href="/certificates">
+        Certificados
       </a>
-      <a className="me-20" href="">
+      <a className="ml-20" href="/contacts">
         Contato
       </a>
     </nav>
