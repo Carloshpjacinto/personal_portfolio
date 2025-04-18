@@ -4,14 +4,13 @@
 }
 
 @theme inline {
+  --color-green-kpp: #00bf63;
 }
 
 @media (prefers-color-scheme: dark) {
-
 }
 
-html{
-
+html {
   font-size: 10px;
 }
 
