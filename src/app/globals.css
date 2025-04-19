@@ -5,6 +5,7 @@
 
 @theme inline {
   --color-green-kpp: #00bf63;
+  --color-default: #21243D;
 }
 
 @media (prefers-color-scheme: dark) {

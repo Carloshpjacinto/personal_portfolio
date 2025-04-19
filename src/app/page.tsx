@@ -1,3 +1,5 @@
+import { artigos } from "@/resource/artigos";
+
 export default function Home() {
   return (
     <>
@@ -25,8 +27,25 @@ export default function Home() {
         </button>
       </header>
 
-      <section className="absolut w-[100vw] h-[39.6rem] mt-[10rem] bg-gray-200 m-0 ml-[-20rem] p-[15rem]">
-        <h1>Blog</h1>
+      <section className="absolut w-[100vw] h-[39.6rem] mt-[10rem] bg-gray-200 m-0 ml-[-20rem] pt-[5rem] pl-[8rem]">
+        <div className="flex flex-row justify-between">
+          {artigos.map((artigo) => (
+            <a key={artigo.id} href={artigo.link}>
+              <div className="bg-white w-[41.8rem] h-[29.5rem] p-[3.5rem] rounded-[5rem] mr-[10rem]">
+                <h1 className="text-[2.6rem] font-bold mb-[1.5rem] text-green-kpp">
+                  {artigo.titulo}
+                </h1>
+                <span className="text-[1.8rem] font-normal">{artigo.data}</span>
+                <span className="text-[1.8rem] font-normal ml-[2.5rem] text-green-kpp">
+                  {artigo.assunto}
+                </span>
+                <h3 className="text-[1.6rem] font-normal mt-[1rem]">
+                  {artigo.artigo}
+                </h3>
+              </div>
+            </a>
+          ))}
+        </div>
       </section>
     </>
   );
