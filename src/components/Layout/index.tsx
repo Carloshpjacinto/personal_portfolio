@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Navbar />
-      <main className="ml-[20rem] mr-[10rem] mt-[2.5rem] text-default">
+      <main className="ml-[0rem] mr-[0rem] mt-[2.5rem] text-default">
         {children}
       </main>
       <Footer />
